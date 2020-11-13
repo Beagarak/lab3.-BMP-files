@@ -1,6 +1,5 @@
-import math
-from math import cos as cos
-from math import sin as sin
+from math import cos, sin, pi
+
 
 x_offset = -3
 y_offset = -3
@@ -10,7 +9,7 @@ height = 600
 all_values = []
 pixel = []
 STEP = 0.01
-while t <= 2 * math.pi:
+while t <= 2 * pi:
     x = round(2 * cos(t) + cos(2 * t), 2)
     y = round(2 * sin(t) - sin(2 * t), 2)
     pixel.append(x)
